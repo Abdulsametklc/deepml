@@ -41,49 +41,6 @@ return `None`.
 
     [[0.6, -0.7],
      [-0.2, 0.4]]
-
-------------------------------------------------------------------------
-
-## 💻 Python Solution (PyTorch)
-
-``` python
-import torch
-
-def inverse_2x2(matrix):
-    m = torch.tensor(matrix, dtype=torch.float32)
-
-    a, b = m[0][0], m[0][1]
-    c, d = m[1][0], m[1][1]
-
-    det = a * d - b * c
-
-    if det == 0:
-        return None
-
-    inv = torch.tensor([
-        [d, -b],
-        [-c, a]
-    ], dtype=torch.float32)
-
-    return inv / det
-```
-
-------------------------------------------------------------------------
-
-## 🚀 Notes
-
--   Time Complexity: **O(1)**
-
--   Works only for **2x2 matrices**
-
--   For larger matrices, use:
-
-    ``` python
-    torch.inverse(matrix)
-    ```
-
-------------------------------------------------------------------------
-
 ## 🎯 Key Takeaways
 
 -   Determinant decides invertibility
