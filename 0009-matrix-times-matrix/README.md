@@ -42,26 +42,3 @@ B = \[\[2, 1\], \[3, 4\], \[4, 5\]\]
 **Output:** -1
 
 **Explanation:** Matrix shapes are not compatible for multiplication.
-
-------------------------------------------------------------------------
-
-## 🚀 Summary
-
--   Check dimensions first
--   Multiply rows by columns
--   Return result matrix or **-1**
-
-------------------------------------------------------------------------
-
-## 🧩 Function Goal
-
-Implement a function:
-
-``` python
-def matrixmul(A, B):
-    pass
-```
-
-------------------------------------------------------------------------
-
-Good luck! 💪
