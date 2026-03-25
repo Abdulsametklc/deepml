@@ -5,12 +5,6 @@
 
 The goal is to compute an **approximate Singular Value Decomposition (SVD)** of a real 2x2 matrix using **only one Jacobi rotation**.  
 
-Given a matrix `A` of shape `(2, 2)`, the task is to return a decomposition:
-
-\[
-A \approx U \cdot \text{diag}(S) \cdot V^T
-\]
-
 where:
 
 - `U` is a 2x2 orthogonal matrix containing the **left singular vectors**.  
